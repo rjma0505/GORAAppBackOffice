@@ -5,10 +5,11 @@ from Controller.LoginController import LoginController
 from Controller.DashboardController import DashboardController
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)  # ✅ Isto tem de vir antes de qualquer QWidget
+    app = QApplication(sys.argv)  
 
     login_view = LoginView()
     LoginController(login_view)
 
     login_view.show()
-    sys.exit(app.exec_())  # ✅ Mantém a aplicação viva
+    sys.exit(app.exec_())  
+    
